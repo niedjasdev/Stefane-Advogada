@@ -19,7 +19,7 @@ O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, priorizando boas p
 
 ## 📸 Preview
 
-![Preview do projeto](https://github.com/user-attachments/assets/2eb37bf6-a8ee-4c33-a072-56bb532d651f)
+![Preview do projeto](https://github.com/user-attachments/assets/bdbfdadc-a394-4498-9f02-1ea4548444ba)
 
 
 
@@ -86,4 +86,4 @@ Este projeto foi validado utilizando o Axe DevTools, garantindo conformidade com
 
 ## 🔗 Link do Projeto
 
-[Clique aqui para visitar](https://stefane-brito.vercel.app/)
+[Clique aqui para visitar](https://stefane-advogada.vercel.app/)
