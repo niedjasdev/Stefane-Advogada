@@ -1,6 +1,6 @@
 //Mostrar backgroud do header ao scrollar a pág
+const scrollBar = document.querySelector("header");
 window.addEventListener("scroll", () => {
-  const scrollBar = document.querySelector("header");
   if (window.scrollY > 50) {
     scrollBar.classList.add("scrolled");
   } else {
@@ -79,12 +79,14 @@ const showError = (input, message) => {
   const errorId = document.getElementById(`${input.id}-error`);
   errorId.textContent = message;
   input.classList.add("input-error");
+  input.setAttribute("aria-invalid", "true");
 };
 
 const clearError = (input) => {
   const errorId = document.getElementById(`${input.id}-error`);
   errorId.textContent = "";
   input.classList.remove("input-error");
+  input.removeAttribute("aria-invalid");
 };
 
 //validação ao enviar
@@ -106,7 +108,19 @@ form.addEventListener("submit", (e) => {
   });
 
   if (isFormValid) {
-    alert("ok");
+    showSuccessMessage();
     form.reset();
   }
 });
+
+// mensagem de alerta enviado/ nao enviado
+
+const feedback = document.querySelector(".form-feedback");
+
+const showSuccessMessage = () => {
+  feedback.classList.add("success");
+  // Esconde após 5 segundos
+  setTimeout(() => {
+    feedback.classList.remove("success");
+  }, 5000);
+};

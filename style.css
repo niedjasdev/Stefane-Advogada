@@ -715,6 +715,16 @@ textarea {
   margin-top: 4px;
   min-height: 18px;
 }
+.form-feedback {
+  display: none;
+  color: var(--color-text-subtitle);
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+
+.form-feedback.success {
+  display: block;
+}
 
 /* FOOTER */
 
